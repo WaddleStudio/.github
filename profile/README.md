@@ -36,8 +36,9 @@ API-first architecture · Deterministic over probabilistic · Ship specs before 
 | Repo | Purpose |
 |------|---------|
 | `fleet-command` | Spec library — all project specifications, architecture docs, and knowledge base sources |
-| `openclaw` | Agent orchestration engine — Discord + Notion cron jobs, MCP-first architecture |
 | `fleetbot` | Discord bot for fleet-command operations (deployed on Railway) |
+
+Agent orchestration (OpenClaw) is an architectural concept spanning FleetBot + Notion cron jobs + MCP integrations, not a standalone repo.
 
 ---
 
@@ -48,7 +49,7 @@ API-first architecture · Deterministic over probabilistic · Ship specs before 
 **Data:** PostgreSQL (Supabase) · pgvector · Drizzle / SQLAlchemy / Spring Data JPA
 **AI/ML:** Claude · Gemini · Ollama + Qwen · Cohere Embed
 **Deploy:** Vercel · Railway
-**Automation:** n8n · OpenClaw · NotebookLM
+**Automation:** n8n · Discord bots · NotebookLM
 
 ---
 
