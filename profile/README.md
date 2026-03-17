@@ -20,8 +20,8 @@ API-first architecture · Deterministic over probabilistic · Ship specs before 
 **📰 TechTrend Briefing** — B2B tech intelligence newsletter for engineering leaders. NotebookLM-powered content pipeline.
 `techtrend`
 
-**🎲 SmartChoice** — AI-assisted daily decision helper (what to eat, where to go). Integrates with RTA and CardSense.
-`smartchoice`
+**🍽️ GoDine（搞定）** — AI dining recommendations for Taiwan. Context-aware, personalized, not a random spinner.
+`godine`
 
 **🧊 FridgeManager** — Household ingredient management with expiry alerts and AI recipe suggestions.
 `fridgemanager`
@@ -38,7 +38,7 @@ API-first architecture · Deterministic over probabilistic · Ship specs before 
 | `fleet-command` | Spec library — all project specifications, architecture docs, and knowledge base sources |
 | `fleetbot` | Discord bot for fleet-command operations (deployed on Railway) |
 
-Agent orchestration (OpenClaw) is an architectural concept spanning FleetBot + Notion cron jobs + MCP integrations, not a standalone repo.
+Agent orchestration (unnamed) is an architectural concept spanning FleetBot + Notion cron jobs + MCP integrations, not a standalone repo.
 
 ---
 
@@ -56,10 +56,11 @@ Agent orchestration (OpenClaw) is an architectural concept spanning FleetBot + N
 ## Cross-Product Integration
 
 ```
-SmartChoice → CardSense    Restaurant pick → best payment card
-SmartChoice → RTA          Location pick → review trust verification
-FridgeManager → CardSense  Grocery list → best supermarket card
-SEEDCRAFT → RTA            Cram school → parent review credibility
+GoDine → CardSense       Restaurant pick → best payment card
+GoDine → RTA             Restaurant pick → review trust verification
+FridgeManager → GoDine   Expiring ingredients → what to cook tonight
+FridgeManager → CardSense Grocery list → best supermarket card
+SEEDCRAFT → RTA           Cram school → parent review credibility
 ```
 
 ---
